@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function in_xinchao(){
+            console.log("xin chào buổi tối")
+            console.log("buổi tối đi học tin")
+        }
+        in_xinchao();
+        //hàm không có tham số
+        function in_bcc2(){
+        console.log("2.1=2")
+        console.log("2.2=4")
+        console.log("2.3=6")
+        console.log("...")
+
+        }
+        in_bcc2();
+        //hàm có 1 tham số:
+        function thongTinHinhVuong(canh){
+            console.log("hình vuông có cạnh ="+canh)
+        }
+        // hàm có 2 tham số:(ghi mttj Ct thôi, có thể tái sử dụng với nhiều tham số khác nhau)
+        function thongTinHinhChuNhat(dai,rong){
+            console.log("HCN có chiều dài= "+dai+" và chiều rộng= "+rong)
+
+
+        }
+        //function có 2 tham số:
+        function mieuTaMe(hinhAnh,dang){
+            console.log(` Tóc mẹ bạc màu ${hinhAnh} phủ kín đôi vai ${dang}`)
+        }
+        thongTinHinhVuong(4)
+        thongTinHinhChuNhat(5,2)
+        thongTinHinhChuNhat(10,5)
+        mieuTaMe("sương","còng")
+        mieuTaMe("mây","gầy")
+        
+        //*Các hàm tính có sẵn trong ngôn ngữ Jvs
+        console.log(Math.max(2,3,4))
+        //max: tìm số lớn nhất
+        console.log(Math.round(4.9))
+        //round: làm tròn
+        console.log(Math.pow(2,3))
+        //pow: lũy thừa
+        // hoặc alert(Math.pow(2,3))
+        
+        //hàm tính toán tự định nghĩa: return (khi hàm tính ko có sẵn trong ngôn ngữ Jvs)
+        function tong(a,b){
+            return a+b;
+        }
+        function tich(a,b,c){
+            return a*b*c
+        }
+        function thuong(a,b){
+            return a/b
+        }
+        console.log(tong(2,3))
+        console.log(tich(2,3,4))
+        console.log(thuong(4,2))
+
+        // Tính diện tích HCN
+        function dienTichHinhChuNhat(dai,rong){
+            return dai*rong;
+        }
+        //Tính diện tích hình tròn
+        const pi=3.14
+        function dienTichHinhTron(banKinh){
+            return banKinh**2*pi
+        }
+        console.log(dienTichHinhChuNhat(5,4))
+        console.log(dienTichHinhTron(3))
+    </script>
+</body>
+</html>
